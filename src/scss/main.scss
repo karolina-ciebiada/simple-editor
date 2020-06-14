@@ -1,13 +1,58 @@
 @import "~normalize.css";
 
-@import "_variables";
-@import "modules/hello.scss";
 
 body {
-  background: $wtf;
+  background: #151718;
   color: #fff;
+  max-width:800px;
+  margin-left: auto;
+  margin-right:auto;
+  font-family: helvetica;
+ 
+
+}
+.main{
+  &__heading {
+    padding-top:70px;
+    margin-bottom:10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-weight: 100;
+ 
+  }
+&__content{
+  display:flex;
+  flex-direction: column;
+
+}
+  &__editor{
+    margin-bottom:20px;
+    width:800px;
+    min-height:60vh;
+    border-radius: 47px;
+    }
+  
+}
+.section{
+&__button{
+  align-self: flex-end;
+  margin-left:20px;
+  border-radius:36.5px;
+  color:white;
+  font-size:20px;
+  letter-spacing: 1px;
+}
+}
+.button_1
+{
+  background: #3B5EB7;
+  border: solid 1px #3B5EB7;
+  padding: 13px 50px 13px 50px;
+}
+.button_2
+{
+  background: #616674;
+  border: solid 1px #616674;
+  padding: 13px 50px 13px 50px;
 }
